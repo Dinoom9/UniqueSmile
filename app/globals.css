@@ -1,0 +1,23 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 44, 62, 80; /* צבע טקסט כהה */
+  --background-start-rgb: 240, 248, 255; /* צבע רקע בהיר */
+  --background-end-rgb: 255, 255, 255; /* צבע רקע לבן */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* צבע טקסט לבן */
+    --background-start-rgb: 0, 0, 0; /* צבע רקע כהה */
+    --background-end-rgb: 34, 34, 34; /* צבע רקע כהה מאוד */
+  }
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  color: rgb(var(--foreground-rgb));
+}
